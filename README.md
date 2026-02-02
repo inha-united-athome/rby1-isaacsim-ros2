@@ -8,7 +8,8 @@ This project has been tested and is supported on the following environments and 
 * Python (>= 3.10)
 
 ## 📌 Notable Improvements
-We have improved the official RB-Y1 Isaac Sim asset to ensure stable locomotion. [github issue](https://github.com/RainbowRobotics/rby1-sdk/issues/127)
+We have improved the official RB-Y1 Isaac Sim asset to ensure stable locomotion. 
+![RB-Y1 isaacsim issue](https://github.com/RainbowRobotics/rby1-sdk/issues/127)
 ![Imrovement](assets/improvement.mp4)
 
 
@@ -18,6 +19,8 @@ See the official [Isaacsim documentation]((https://docs.isaacsim.omniverse.nvidi
 
 ## 💡 ROS2 Interfaces
 * ROS2 Topics:
+
+
 | Message | Description | ROS Topic Name |
 |-|-|-|
 | Image | RGB image rendered from the head-mounted camera in IsaacSim. The image is at 640/480 resolution with 80 deg VFOV.    | `/rgb` |
@@ -30,7 +33,7 @@ See the official [Isaacsim documentation]((https://docs.isaacsim.omniverse.nvidi
 ![Enviroment of Robocup @home](assets/robocup2024.png)
 
 ## 🚧 TODOs
-[X] Organize MuJoCo-based RB-Y1 simulation core <br>
+[X] Organize Isaacsim-based RB-Y1 simulation core <br>
 [X] Keyboard teleop & ROS2 Nav2 pkg integration <br>
 [ ] Release dual-arm controller *(in progress)* <br>
 [ ] Release system-level RB-Y1 simulation evaluation code
