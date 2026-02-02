@@ -1,5 +1,5 @@
 # 🤖 RB-Y1 Isaacsim Simulation with ROS2
-This repository provides Isaac-based simulation environments for the [Rainbow Robotics RB-Y1](https://www.rainbow-robotics.com/rby1) robot with ROS2 integration. It includes simulation environments configured for basic keyboard teleoperation and mobile manipulation tasks.
+This repository provides Isaac-based simulation environments for the [Rainbow Robotics RB-Y1](https://www.rainbow-robotics.com/rby1/en) robot with ROS2 integration. It includes simulation environments configured for basic keyboard teleoperation and mobile manipulation tasks.
 
 This project has been tested and is supported on the following environments and software versions:
 * Ubuntu 22.04
@@ -14,7 +14,7 @@ We have improved the official RB-Y1 Isaac Sim asset to ensure stable locomotion.
 
 
 ## 🌐 IsaacSim Installation
-See the official ![Isaacsim documentation](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/download.html).
+See the official ![Isaacsim documentation](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/).
 
 
 ## 💡 ROS2 Interfaces
