@@ -19,7 +19,7 @@ def generate_launch_description():
     rby1_nav_dir = get_package_share_directory("rby1_navigation")
     # rby1_nav_dir = /home/.../rby1_ros2_ws/install/rby1_navigation/share/rby1_navigation
     workspace_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(rby1_nav_dir))))
-    usd_path = os.path.join(workspace_root, "src", "0926Final.usd")
+    usd_path = os.path.join(workspace_root, "src", "RBY1-robocup2024.usd")
 
     # Isaac Sim path
     isaac_sim_path = os.path.expanduser("~/isaacsim/_build/linux-x86_64/release/isaac-sim.sh")
