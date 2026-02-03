@@ -10,11 +10,16 @@ This project has been tested and is supported on the following environments and 
 ## 📌 Notable Improvements
 We have improved the official RB-Y1 Isaac Sim asset to ensure stable locomotion. 
 ![RB-Y1 isaacsim issue](https://github.com/RainbowRobotics/rby1-sdk/issues/127)
-![Imrovement](assets/improvement.mp4)
+![Imrovement](assets/improvement.gif)
 
 
 ## 🌐 IsaacSim Installation
 See the official ![Isaacsim documentation](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/quick-install.html#quick-install).
+
+## Installation Ours USD
+```
+./scripts/download.sh
+```
 
 
 ## 💡 ROS2 Interfaces
