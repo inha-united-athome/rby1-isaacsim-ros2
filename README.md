@@ -16,7 +16,7 @@ We have improved the official RB-Y1 Isaac Sim asset to ensure stable locomotion.
 ## 🌐 IsaacSim Installation
 See the official [Isaacsim documentation](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/download.html).
 
-## Installation Our USD
+## 📂 Installation Our USD
 [Download URL](https://drive.google.com/drive/folders/1FwdrhaHXlAxxRLxPmeWcErxue1Za8a3X)
 
 
