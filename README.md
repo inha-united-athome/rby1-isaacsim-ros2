@@ -53,16 +53,16 @@ We provide direct integration with MoveIt 2 for motion planning and control.
 ![Moveit](assets/moveit.gif)
 
 ### Moveit Interfaces
-| Planning Group | Group Name | 
-|-|-|
-|torso|rby1_torso|
-|right arm|rby1_rightarm|
-|left arm|rby1_leftarm|
-|head|rby1_head|
-|dualarm|rby1_dualarm|
-|arm, head, torso|rby1_wholebody|
-|left gripper|rby1_left_gripper|
-|right gripper|rby1_right_gripper|
+| Planning Group | Group Name |
+| :--- | :--- |
+| torso | rby1_torso |
+| right arm | rby1_right_arm |
+| left arm | rby1_left_arm |
+| head | rby1_head |
+| dualarm | rby1_dualarm |
+| arm, head, torso | rby1_wholebody |
+| left gripper | rby1_left_gripper |
+| right gripper | rby1_right_gripper |
 
 ## 🗺️ Nav2 Integration
 We integration with Nav2 for autonomous navigation.
