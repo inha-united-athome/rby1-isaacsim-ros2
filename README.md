@@ -12,6 +12,11 @@ We have improved the official RB-Y1 Isaac Sim asset to ensure stable locomotion.
 [RB-Y1 isaacsim issue](https://github.com/RainbowRobotics/rby1-sdk/issues/127)
 ![Imrovement](assets/improvement.gif)
 
+> [!CAUTION]
+> This is an **unofficial modification** to address simulation stability. Please note that physical coefficients may not perfectly match the real robot.
+>
+> **Gripper Control Note**: In this simulation, the gripper is controlled via **MoveIt** (`JointTrajectoryController`). Note that the real RB-Y1 robot's gripper is typically controlled directly via Dynamixel SDK/Interfaces.
+
 
 ## 🌐 IsaacSim Installation
 See the official [Isaacsim documentation](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/download.html).
@@ -30,10 +35,44 @@ See the official [Isaacsim documentation](https://docs.isaacsim.omniverse.nvidia
 | Odometry | Robot base pose and velocity estimated directly from Isaac simulation state. | `/odom` |
 | LaserScan | 360° LaserScan in the robot base frame. | `/laser_scan` |
 | Twist | Velocity command for differential drive control. | `/cmd_vel` |
+| JointState | Joint state feedback from Isaac Sim. | `/joint_states` |
+| JointCommand | Joint position commands sent to Isaac Sim. | `/joint_commands` |
 
 ### 🖼 Simulation Preview
-![Preview](assets/simulation.png)
-![Enviroment of Robocup @home](assets/robocup2024.png)
+| ![Preview](assets/simulation.png) | ![Enviroment](assets/robocup2024.png) |
+| :---: | :---: |
+
+## 🦾 MoveIt and Nav2 Integration
+We provide direct integration with MoveIt 2 for motion planning and control.
+* **Launch**: `ros2 launch rby1_isaac_moveit_config demo.launch.py`
+* **Features**:
+  * Configured `topic_based_ros2_control` for Isaac Sim bridge.
+  * `JointTrajectoryController` for arms, torso, head, and grippers.
+  * Motion planning with OMPL, CHOMP, and Pilz Industrial Motion Planner.
+
+![Moveit](assets/moveit.gif)
+
+### Moveit Interfaces
+| Planning Group | Group Name | 
+|-|-|
+|torso|rby1_torso|
+|right arm|rby1_rightarm|
+|left arm|rby1_leftarm|
+|head|rby1_head|
+|dualarm|rby1_dualarm|
+|arm, head, torso|rby1_wholebody|
+|left gripper|rby1_left_gripper|
+|right gripper|rby1_right_gripper|
+
+## 🗺️ Nav2 Integration
+We integration with Nav2 for autonomous navigation.
+* **Launch**: `ros2 launch rby1_navigation rby1_navigation.launch.py`
+* **Features**:
+  * Pre-configured map (`athome_navigation.yaml`) and navigation parameters.
+  * AMCL localization and DWB local planner.
+  * RViz configuration for navigation.
+
+![Nav2](assets/nav2.gif)
 
 ## 🚧 TODOs
 [X] Organize Isaacsim-based RB-Y1 simulation core <br>
