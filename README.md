@@ -42,16 +42,13 @@ See the official [Isaacsim documentation](https://docs.isaacsim.omniverse.nvidia
 | ![Preview](assets/simulation.png) | ![Enviroment](assets/robocup2024.png) |
 | :---: | :---: |
 
-## 🦾 MoveIt and Nav2 Integration
+## 🦾 MoveIt Integration
 We provide direct integration with MoveIt 2 for motion planning and control.
 * **Launch**: `ros2 launch rby1_isaac_moveit_config demo.launch.py`
 * **Features**:
   * Configured `topic_based_ros2_control` for Isaac Sim bridge.
   * `JointTrajectoryController` for arms, torso, head, and grippers.
   * Motion planning with OMPL, CHOMP, and Pilz Industrial Motion Planner.
-
-![Moveit](assets/moveit.gif)
-
 
 ## 🗺️ Nav2 Integration
 We integration with Nav2 for autonomous navigation.
@@ -61,13 +58,12 @@ We integration with Nav2 for autonomous navigation.
   * AMCL localization and DWB local planner.
   * RViz configuration for navigation.
 
-![Nav2](assets/nav2.gif)
 
 ## 🚧 TODOs
 [X] Organize Isaacsim-based RB-Y1 simulation core <br>
 [X] Keyboard teleop & ROS2 Nav2 pkg integration <br>
-[ ] Release dual-arm controller *(in progress)* <br>
-[ ] Release system-level RB-Y1 simulation evaluation code
+[X] Release dual-arm controller  <br>
+[ ] Release system-level RB-Y1 simulation evaluation code *(in progress)*
 
 ## 🙏 Acknowledgements
 This project is built upon the following frameworks and resources:
